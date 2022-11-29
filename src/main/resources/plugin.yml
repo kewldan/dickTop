@@ -1,0 +1,12 @@
+name: DickTop
+version: '${project.version}'
+main: com.kewldan.dick.DickTop
+api-version: 1.16
+prefix: DICK
+authors: [ kewldan ]
+description: Adds dick rating system
+website: https://vk.com/kewldan
+commands:
+  dick:
+    description: Commands of plugin
+    usage: /dick [cmd]
