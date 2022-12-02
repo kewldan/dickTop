@@ -1,7 +1,7 @@
 package com.kewldan.dick;
 
+import com.kewldan.dick.database.SQL;
 import com.kewldan.dick.handlers.Commands;
-import com.kewldan.dick.handlers.Events;
 import org.bukkit.Bukkit;
 import org.bukkit.Server;
 import org.bukkit.command.PluginCommand;
@@ -20,7 +20,6 @@ public final class DickTop extends JavaPlugin {
     public static FileConfiguration config;
     public static Server server;
     public static Commands commands;
-    public static Events events;
 
     public static String getMessage(String code) {
         return config.contains(code) ? config.getString(code) : code;
@@ -57,9 +56,6 @@ public final class DickTop extends JavaPlugin {
 
         commands = new Commands();
         commands.load();
-
-        events = new Events();
-        events.load(this);
 
         PluginCommand dick = getCommand("dick");
 

@@ -1,4 +1,4 @@
-package com.kewldan.dick;
+package com.kewldan.dick.misc;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,9 +1,9 @@
 package com.kewldan.dick.handlers;
 
-import com.kewldan.dick.CommandBundle;
-import com.kewldan.dick.CommandParent;
 import com.kewldan.dick.DickTop;
-import com.kewldan.dick.User;
+import com.kewldan.dick.database.User;
+import com.kewldan.dick.misc.CommandBundle;
+import com.kewldan.dick.misc.CommandParent;
 import com.sun.istack.internal.NotNull;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -58,17 +58,18 @@ public class Commands implements CommandExecutor, TabCompleter {
         if (sender instanceof Player) {
             Player player = (Player) sender;
 
-            String cmd = args.length >= 1 ? args[0].toLowerCase() : "help";
+            String cmd = args.length >= 1 ? args[0].toLowerCase() : "reward";
 
             if (aliases.containsKey(cmd)) {
                 User u;
                 try {
                     u = User.load(sender.getName());
 
-                    if(!u.isLoaded()){
+                    if (!u.isLoaded()) {
                         u = User.create(sender.getName());
                     }
-                }catch(SQLException ignored){
+                } catch (SQLException exc) {
+                    exc.printStackTrace();
                     return false;
                 }
 
@@ -98,10 +99,10 @@ public class Commands implements CommandExecutor, TabCompleter {
             try {
                 u = User.load(sender.getName());
 
-                if(!u.isLoaded()){
+                if (!u.isLoaded()) {
                     u = User.create(sender.getName());
                 }
-            }catch(SQLException ignored){
+            } catch (SQLException ignored) {
                 return null;
             }
 

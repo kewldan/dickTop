@@ -2,31 +2,30 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="DickTop:jar" />
+      <artifact name="dick:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efafb29e-347e-4873-acca-57dd1c61e5a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/DickTop_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/CommandBundle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/CommandParent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/DickTop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/SQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/handlers/Commands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/handlers/Events.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+    <list default="true" id="efafb29e-347e-4873-acca-57dd1c61e5a5" name="Changes" comment="Initial">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/commands/Help.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/commands/Leaderboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/commands/Reward.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/commands/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/DickTop_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/dick_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/CommandBundle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/misc/CommandBundle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/CommandParent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/misc/CommandParent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/DickTop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/DickTop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/SQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/database/SQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/database/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/handlers/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/handlers/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kewldan/dick/handlers/Events.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +45,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2ID7tlQ8yCB4SpjDLs3RL0qOlKt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,18 +60,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "E:/Projects/Plugins/TestServer/plugins",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Projects/Plugins/TestServer/plugins&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -75,6 +81,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669704517659</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial">
+      <created>1669753969693</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669753969693</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,5 +101,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
   </component>
 </project>

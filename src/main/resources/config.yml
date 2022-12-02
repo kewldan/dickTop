@@ -1,10 +1,26 @@
 mysql:
   host: "127.0.0.1"
-  port: 25565
+  port: 3306
   user: "admin"
   password: "password"
-  database: "tribes"
+  database: "dicktop"
+
+config:
+  min: -5 # Minimal value to change dick length (Usually negative) | Default: -5
+  max: 10 # Maximal value to change dick length (Usually positive) | Default: 10
 
 messages:
   commands:
-    unknown: "Неизвестная команда" #{CMD} for command name
+    unknown: "Неизвестная команда" # {CMD} - command name
+  reward:
+    changed: "Ваш писюн увеличелся на {VALUE} см, теперь он равен {LENGTH} см" # {VALUE} - change value, {LENGTH} - user`s dick length
+    zero: "Ваш писюн не изменился, он всё ещё {LENGTH} см" # {LENGTH} - user`s dick length
+    claimed: "Вы уже собрали бонус, попробуйте через {TIME}, сейчас ваш писюн равен {LENGTH}" # {LENGTH} - user`s dick length, {TIME} - Time to claim new reward
+  help:
+    title: "Список доступных команд:"
+    row: "{NUMBER}. {ALIAS} - {DESCRIPTION}" # {NUMBER} - Number, {ALIAS} - 1st alias of command, {DESCRIPTION} - command`s description
+  world:
+    result: "Сумма всех писюнов в мире {LENGTH} см" # {LENGTH} - sum of all dicks
+  top:
+    title: "Топ игроков ({PAGE}/{PAGES}):" # {PAGE} - current page, {PAGES} - count of all pages
+    row: "{NUMBER}. {NICKNAME} - {LENGTH} см" # {NUMBER} - Number, {NICKNAME} - player`s name, {LENGTH} - player`s dick length

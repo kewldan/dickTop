@@ -1,5 +1,6 @@
-package com.kewldan.dick;
+package com.kewldan.dick.misc;
 
+import com.kewldan.dick.database.User;
 import org.bukkit.entity.Player;
 
 import java.lang.reflect.InvocationTargetException;
